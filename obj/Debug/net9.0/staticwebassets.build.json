@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "7z+tWxMSJbWrXbNHXkOsqKsbzdtvN/7WqyCtON1RYYI=",
+  "Source": "E-handel.Api",
+  "BasePath": "_content/E-handel.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
