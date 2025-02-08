@@ -14,6 +14,17 @@ builder.Services.AddControllers();
 builder.Services.Configure<KlarnaConfig>(builder.Configuration.GetSection("Klarna"));
 builder.Services.AddHttpClient<IPaymentService, KlarnaService>();
 builder.Services.AddScoped<IPaymentService, KlarnaService>();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:3000")
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials();
+        });
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen(
@@ -34,6 +45,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors();
 app.MapControllers();
 
 app.Run();

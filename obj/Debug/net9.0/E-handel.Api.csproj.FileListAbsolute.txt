@@ -36,3 +36,4 @@ D:\E-handel\E-handel.Api\obj\Debug\net9.0\refint\E-handel.Api.dll
 D:\E-handel\E-handel.Api\obj\Debug\net9.0\E-handel.Api.pdb
 D:\E-handel\E-handel.Api\obj\Debug\net9.0\E-handel.Api.genruntimeconfig.cache
 D:\E-handel\E-handel.Api\obj\Debug\net9.0\ref\E-handel.Api.dll
+D:\E-handel\E-handel.Api\obj\Debug\net9.0\E-handel.Api.sourcelink.json

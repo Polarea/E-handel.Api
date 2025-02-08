@@ -1,4 +1,5 @@
 using E_handel.Payment.Interfaces;
+using E_handel.Payment.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_handel.Api.Controllers
@@ -15,11 +16,11 @@ namespace E_handel.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateOrderAsync()
+        public async Task<IActionResult> CreateOrderAsync(OrderRequest order)
         {
             try
             {
-                var klarnaResponse = await _paymentService.CreateOrderAsync(new { });
+                var klarnaResponse = await _paymentService.CreateOrderAsync(order);
                 return Ok(klarnaResponse);
             }
             catch (HttpRequestException ex)
